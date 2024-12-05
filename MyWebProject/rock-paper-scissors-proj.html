@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bhargavi 👾</title>
+    <link rel="stylesheet"
+    href="rock-paper-scissors-proj.css">
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    
+    <!-- Buttons that pass the player's move to playGame function -->
+    <button onclick="playGame('rock');" class="move-button"><img src="rock-emoji.png" class="move-icon"></button>
+    <button onclick="playGame('paper');" class="move-button"><img src="paper-emoji.png" class="move-icon"></button>
+    <button onclick="playGame('scissors');" class="move-button"><img src="scissors-emoji.png" class="move-icon"></button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-scores score"></p>
+
+
+    <button onclick="
+    scores.wins = 0;
+    scores.losses = 0;
+    scores.Ties = 0;
+    localStorage.removeItem('scores');
+    updateScoreElement();
+    " class="reset-score-button">Reset Score</button>
+
+  </body>
+  <script src="rock-paper-scissors-proj.js">
+  </script>
+</html>
+<!DOCTYPE html>
